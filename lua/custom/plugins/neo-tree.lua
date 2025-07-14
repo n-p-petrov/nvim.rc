@@ -6,6 +6,9 @@ return {
     'nvim-tree/nvim-web-devicons',
     'MunifTanjim/nui.nvim',
   },
+  keys = {
+    { '<leader>e', ':Neotree toggle<CR>', desc = 'NeoTree toggle', silent = true },
+  },
   config = function()
     vim.g.neo_tree_remove_legacy_commands = 1
     require('neo-tree').setup {
