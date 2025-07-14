@@ -174,10 +174,10 @@ vim.o.confirm = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Copy to clipbard
-vim.keymap.set('v', '<leader>y', '"+y')
+vim.keymap.set('v', '<leader>y', '"+y', { desc = '[Y]ank to clipboard.' })
 
 -- Paste from clipboard
-vim.keymap.set('n', '<leader>p', '+p')
+vim.keymap.set('n', '<leader>p', '+p', { desc = '[P]aste from clipboard.' })
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
