@@ -9,9 +9,10 @@ return {
 
       start_in_insert = true,
       autochdir = true,
-      direction = 'horizontal',
+      direction = 'float',
       persist_size = true,
       close_on_exit = true,
+      size = 30,
     }
 
     function _G.set_terminal_keymaps()
