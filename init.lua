@@ -108,8 +108,11 @@ vim.o.relativenumber = false
 vim.o.mouse = 'a'
 
 -- Number of spaces per TAB
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4 --Number of spaces per TAB
+vim.opt.shiftwidth = 4 --Number of spaces per TAB for autoindentation
+vim.opt.expandtab = true --Convert TAB to spaces
+vim.opt.smarttab = true --Smart TAB placements
+vim.opt.autoindent = true --Copy indent from current line
 
 -- Don't show the mode, since it's already in the status line
 vim.o.showmode = false
