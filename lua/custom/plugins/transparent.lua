@@ -1,5 +1,8 @@
 return {
   'xiyaowong/transparent.nvim',
+  dependencies = {
+    'folke/tokyonight.nvim',
+  },
   config = function()
     require('transparent').setup {
       lazy = false,
