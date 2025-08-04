@@ -469,16 +469,6 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader>sn', function()
         builtin.find_files { cwd = vim.fn.stdpath 'config' }
       end, { desc = '[S]earch [N]eovim files' })
-
-      -- Make Telescope Transparent
-      vim.api.nvim_set_hl(0, 'TelescopeNormal', { bg = 'none' })
-      vim.api.nvim_set_hl(0, 'TelescopeBorder', { bg = 'none' })
-      vim.api.nvim_set_hl(0, 'TelescopePromptNormal', { bg = 'none' })
-      vim.api.nvim_set_hl(0, 'TelescopePromptBorder', { bg = 'none' })
-      vim.api.nvim_set_hl(0, 'TelescopeResultsNormal', { bg = 'none' })
-      vim.api.nvim_set_hl(0, 'TelescopeResultsBorder', { bg = 'none' })
-      vim.api.nvim_set_hl(0, 'TelescopePreviewNormal', { bg = 'none' })
-      vim.api.nvim_set_hl(0, 'TelescopePreviewBorder', { bg = 'none' })
     end,
   },
 
@@ -614,16 +604,6 @@ require('lazy').setup({
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       vim.cmd.colorscheme 'tokyonight-storm'
-
-      -- Transparent background :)
-      vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' }) -- main buffer
-      vim.api.nvim_set_hl(0, 'NormalNC', { bg = 'none' }) -- not current buffer
-      vim.api.nvim_set_hl(0, 'SignColumn', { bg = 'none' }) -- git sign column
-      vim.api.nvim_set_hl(0, 'VertSplit', { bg = 'none' }) -- unfocused vertical split
-      vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'none' }) -- status line
-      vim.api.nvim_set_hl(0, 'Pmenu', { bg = 'none' }) -- pop-up menu
-      vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
-      vim.api.nvim_set_hl(0, 'FloatBorder', { bg = 'none' })
     end,
   },
 
