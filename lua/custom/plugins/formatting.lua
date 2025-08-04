@@ -32,7 +32,10 @@ return {
     formatters_by_ft = {
       lua = { 'stylua' },
       python = { 'isort', 'black' }, -- run sequentially
-      -- javascript = { "prettierd", "prettier", stop_after_first = true }, TODO:
+      javascript = { 'prettierd' },
+      typescript = { 'prettierd' },
+      javascriptreact = { 'prettierd' },
+      typescriptreact = { 'prettierd' },
     },
   },
 }
