@@ -1,9 +1,9 @@
 return {
   'akinsho/toggleterm.nvim',
-  version = '*',
   config = function()
     require('toggleterm').setup {
       open_mapping = [[<c-\>]],
+      shade_filetypes = { 'none', 'fzf' },
       insert_mappings = true,
       terminal_mappings = true,
 
@@ -12,8 +12,12 @@ return {
       direction = 'float',
       persist_size = true,
       close_on_exit = true,
-      size = 30,
+      size = 25,
     }
+
+    vim.keymap.set('n', '<leader>ot', function()
+      vim.cmd 'TermNew direction=horizontal'
+    end, { desc = '[O]pen new [T]erminal' })
 
     function _G.set_terminal_keymaps()
       local opts = { buffer = 0 }
